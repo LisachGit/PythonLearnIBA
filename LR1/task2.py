@@ -21,6 +21,5 @@ if solutions:
         K, T, O = solution
         print("K =", K, "T =", T, "O =", O)
         print("КТО =", 100 * K + 10 * T + O, "КОТ =", 100 * K + 10 * O + T, "ТОК =", 100 * T + 10 * O + K)
-        print(len(set([K, T, O])))
 else:
     print("Решений не найдено.")
