@@ -1,0 +1,11 @@
+{% extends 'habits/base.html' %}
+
+{% block content %}
+<h2>Твои привычки:</h2>
+{% for habit in habits %}
+    <div class="habit">
+        {{ habit.emoji }} {{ habit.name }} 
+        <small>(последний раз: {{ habit.last_completed|default:"ещё нет" }})</small>
+    </div>
+{% endfor %}
+{% endblock %}
